@@ -1,3 +1,3 @@
 BASE_URL=http://localhost:11434/v1
-HF_TOKEN=ollama
+OPENAI_API_KEY=ollama
 MODEL=qwen2.5-coder:32b-instruct-q4_0
