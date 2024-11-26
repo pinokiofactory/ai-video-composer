@@ -29,8 +29,7 @@ module.exports = {
     {
       method: "shell.run",
       params: {
-        //message: "ollama pull qwen2.5-coder:32b"
-        message: "ollama pull qwen2.5-coder:32b-instruct-q4_0"
+        message: "ollama pull {{env.MODEL}}"
       }
     }
   ]

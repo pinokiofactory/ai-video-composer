@@ -4,6 +4,12 @@ module.exports = {
   title: "ai-video-composer",
   description: "The ultimate video editor powered by natural language and FFMPEG https://huggingface.co/spaces/huggingface-projects/ai-video-composer",
   icon: "icon.png",
+  pre: [{
+    icon: "ollama.png",
+    title: "Ollama",
+    description: "Get up and running with large language models.",
+    href: "https://ollama.com/"
+  }],
   menu: async (kernel, info) => {
     let installed = info.exists("app/env")
     let running = {
