@@ -2,7 +2,7 @@ const path = require('path')
 module.exports = {
   version: "2.0",
   title: "ai-video-composer",
-  description: "",
+  description: "The ultimate video editor powered by natural language and FFMPEG https://huggingface.co/spaces/huggingface-projects/ai-video-composer",
   icon: "icon.png",
   menu: async (kernel, info) => {
     let installed = info.exists("app/env")
