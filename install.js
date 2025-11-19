@@ -18,7 +18,7 @@ module.exports = {
         path: "app",
         message: [
           "uv pip install -r requirements.txt",
-          "uv pip install pydantic==2.10.6"
+          "uv pip install pydantic==2.10.6 huggingface_hub==0.36"
         ]
       }
     },
