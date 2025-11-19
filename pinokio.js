@@ -92,7 +92,6 @@ module.exports = {
           text: "<div><strong>Reset</strong><div>Revert to pre-install state</div></div>",
           href: "reset.js",
           confirm: "Are you sure you wish to reset the app?"
-
         }]
       }
     } else {
