@@ -1,6 +1,8 @@
 module.exports = {
+  requires: {
+    bundle: "ai"
+  },
   run: [
-    // Edit this step to customize the git repository to use
     {
       method: "shell.run",
       params: {
@@ -9,21 +11,15 @@ module.exports = {
         ]
       }
     },
-    // Edit this step with your custom install commands
     {
       method: "shell.run",
       params: {
-        venv: "env",                // Edit this to customize the venv folder path
-        path: "app",                // Edit this to customize the path to start the shell from
+        venv: "env",
+        path: "app",
         message: [
-          "pip install -r requirements.txt"
+          "uv pip install -r requirements.txt",
+          "uv pip install pydantic==2.10.6"
         ]
-      }
-    },
-    {
-      method: "fs.link",
-      params: {
-        venv: "app/env"
       }
     },
     {
